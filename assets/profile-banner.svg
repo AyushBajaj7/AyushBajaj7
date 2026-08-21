@@ -1,60 +1,554 @@
-<svg width="1600" height="540" viewBox="0 0 1600 540" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>Abstract AI and software systems artwork</title>
+<svg
+  width="1600"
+  height="220"
+  viewBox="0 0 1600 220"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>Futuristic AI and software engineering GitHub banner</title>
+
   <defs>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#22D3EE"/>
-      <stop offset="0.48" stop-color="#818CF8"/>
-      <stop offset="1" stop-color="#A3E635"/>
+    <!-- ========================================================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================================================= -->
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="220">
+      <stop offset="0" stop-color="#020711"/>
+      <stop offset="0.48" stop-color="#070B16"/>
+      <stop offset="1" stop-color="#0D0920"/>
     </linearGradient>
-    <linearGradient id="wash" x1="0" y1="0" x2="1600" y2="540">
-      <stop stop-color="#04131C"/>
-      <stop offset="0.5" stop-color="#070B16"/>
-      <stop offset="1" stop-color="#121126"/>
-    </linearGradient>
-    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientTransform="translate(115 405) rotate(-22) scale(410 260)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00D9FF" stop-opacity="0.32"/>
+
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1"
+      gradientTransform="translate(250 205) rotate(-35) scale(440 190)"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00D9FF" stop-opacity="0.24"/>
       <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientTransform="translate(1440 190) rotate(148) scale(340 300)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8B5CF6" stop-opacity="0.34"/>
-      <stop offset="0.55" stop-color="#22D3EE" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1"
+      gradientTransform="translate(1430 78) rotate(145) scale(340 230)"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#2563EB" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
     </radialGradient>
-    <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
-    <filter id="soft"><feGaussianBlur stdDeviation="4"/></filter>
+
+    <linearGradient id="neon" x1="0" y1="220" x2="1600" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.48" stop-color="#818CF8"/>
+      <stop offset="0.78" stop-color="#C084FC"/>
+      <stop offset="1" stop-color="#A3E635"/>
+    </linearGradient>
+
+    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <radialGradient id="sphere" cx="35%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="0.55" stop-color="#0B1025"/>
+      <stop offset="1" stop-color="#02040C"/>
+    </radialGradient>
+
+    <!-- ========================================================= -->
+    <!-- EFFECTS -->
+    <!-- ========================================================= -->
+
+    <filter id="blur20" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+
+    <filter id="blur8" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+
+    <filter id="blur3" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <filter id="textGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+
+    <!-- ========================================================= -->
+    <!-- GRID -->
+    <!-- ========================================================= -->
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        stroke="#67E8F9"
+        stroke-opacity="0.035"
+      />
+    </pattern>
+
+    <!-- ========================================================= -->
+    <!-- SPHERE CLIP -->
+    <!-- ========================================================= -->
+
+    <clipPath id="sphereClip">
+      <circle cx="1360" cy="110" r="122"/>
+    </clipPath>
+
+    <clipPath id="frameClip">
+      <rect width="1600" height="220" rx="18"/>
+    </clipPath>
   </defs>
-  <rect width="1600" height="540" rx="22" fill="url(#wash)"/>
-  <rect width="1600" height="540" rx="22" fill="url(#leftGlow)"/>
-  <rect width="1600" height="540" rx="22" fill="url(#rightGlow)"/>
-  <g opacity="0.18" stroke="#5EEAD4" stroke-width="1">
-    <path d="M0 480C165 382 235 455 380 318C475 227 526 267 641 162"/>
-    <path d="M0 506C163 439 250 508 414 345C492 268 549 282 678 192"/>
-    <path d="M920 418C1064 333 1158 374 1276 230C1362 126 1466 160 1600 80"/>
-    <path d="M905 477C1080 380 1176 447 1316 265C1412 139 1485 222 1600 144"/>
+
+  <!-- =========================================================== -->
+  <!-- BACKGROUND -->
+  <!-- =========================================================== -->
+
+  <g clip-path="url(#frameClip)">
+    <rect width="1600" height="220" fill="url(#bg)"/>
+    <rect width="1600" height="220" fill="url(#grid)"/>
+
+    <rect width="1600" height="220" fill="url(#leftGlow)"/>
+    <rect width="1600" height="220" fill="url(#rightGlow)"/>
+
+    <!-- subtle center darkness -->
+    <ellipse
+      cx="810"
+      cy="110"
+      rx="360"
+      ry="105"
+      fill="#00040C"
+      opacity="0.25"
+    />
+
+    <!-- ========================================================= -->
+    <!-- TOP TECH MARKS -->
+    <!-- ========================================================= -->
+
+    <g opacity="0.25" stroke="#67E8F9" stroke-width="1">
+      <path d="M45 34H155V50H205"/>
+      <path d="M55 44H110"/>
+      <path d="M1390 32H1515V48H1570"/>
+      <path d="M1470 58H1550"/>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- LEFT DIGITAL LANDSCAPE -->
+    <!-- ========================================================= -->
+
+    <!-- distant glow -->
+    <ellipse
+      cx="255"
+      cy="185"
+      rx="250"
+      ry="38"
+      fill="#22D3EE"
+      opacity="0.13"
+      filter="url(#blur20)"
+    />
+
+    <!-- mountain mesh -->
+    <g
+      fill="none"
+      stroke="#2563EB"
+      stroke-opacity="0.32"
+      stroke-width="1"
+    >
+      <path d="M-40 208L70 148L145 178L220 110L300 163L385 105L470 180L550 125"/>
+      <path d="M-20 220L90 160L160 188L230 127L305 178L390 120L470 190L550 140"/>
+
+      <path d="M70 148L90 160"/>
+      <path d="M145 178L160 188"/>
+      <path d="M220 110L230 127"/>
+      <path d="M300 163L305 178"/>
+      <path d="M385 105L390 120"/>
+      <path d="M470 180L470 190"/>
+    </g>
+
+    <!-- bright mountain ridges -->
+    <g fill="none" stroke="url(#cyanPurple)" stroke-linecap="round">
+      <path
+        d="M-20 207
+           C70 168 110 186 178 145
+           C230 114 273 158 324 131
+           C380 100 408 151 470 120"
+        stroke-width="2"
+        opacity="0.68"
+      />
+
+      <path
+        d="M-15 220
+           C85 182 125 202 195 160
+           C250 127 286 171 340 143
+           C395 114 425 164 490 137"
+        stroke-width="1"
+        opacity="0.42"
+      />
+    </g>
+
+    <!-- flowing data river -->
+    <path
+      d="M-30 220
+         C100 202 170 214 260 180
+         C340 151 410 171 555 105"
+      stroke="#22D3EE"
+      stroke-opacity="0.18"
+      stroke-width="14"
+      filter="url(#blur8)"
+    />
+
+    <path
+      d="M-30 220
+         C100 202 170 214 260 180
+         C340 151 410 171 555 105"
+      stroke="url(#neon)"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      opacity="0.85"
+    />
+
+    <!-- landscape data nodes -->
+    <g>
+      <circle cx="93" cy="191" r="3" fill="#67E8F9"/>
+      <circle cx="221" cy="158" r="3" fill="#818CF8"/>
+      <circle cx="324" cy="131" r="3" fill="#C084FC"/>
+      <circle cx="450" cy="130" r="3" fill="#BEF264"/>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- LEFT MICRO LABEL -->
+    <!-- ========================================================= -->
+
+    <g font-family="monospace">
+      <text
+        x="54"
+        y="54"
+        fill="#67E8F9"
+        font-size="10"
+        letter-spacing="2"
+        opacity="0.7"
+      >
+        &gt; BUILDING IDEAS
+      </text>
+
+      <text
+        x="68"
+        y="69"
+        fill="#A5B4FC"
+        font-size="9"
+        letter-spacing="1.6"
+        opacity="0.52"
+      >
+        SHAPING SOLUTIONS_
+      </text>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- CENTER CORE -->
+    <!-- ========================================================= -->
+
+    <!-- soft halo -->
+    <circle
+      cx="800"
+      cy="110"
+      r="57"
+      fill="#6366F1"
+      opacity="0.08"
+      filter="url(#blur20)"
+    />
+
+    <!-- targeting brackets -->
+    <g
+      fill="none"
+      stroke="url(#neon)"
+      stroke-width="1"
+      opacity="0.38"
+    >
+      <path d="M738 87V77H748"/>
+      <path d="M862 77H872V87"/>
+      <path d="M738 133V143H748"/>
+      <path d="M872 133V143H862"/>
+    </g>
+
+    <!-- central code symbol -->
+    <g font-family="monospace" font-weight="700">
+      <text
+        x="800"
+        y="121"
+        text-anchor="middle"
+        font-size="54"
+        fill="#FFFFFF"
+        opacity="0.06"
+        filter="url(#textGlow)"
+      >
+        &lt;/&gt;
+      </text>
+
+      <text
+        x="800"
+        y="121"
+        text-anchor="middle"
+        font-size="54"
+        fill="url(#neon)"
+      >
+        &lt;/&gt;
+      </text>
+    </g>
+
+    <!-- central caption -->
+    <text
+      x="800"
+      y="153"
+      text-anchor="middle"
+      fill="#D8FEFF"
+      font-family="monospace"
+      font-size="10"
+      letter-spacing="5"
+      opacity="0.72"
+    >
+      CODE • INNOVATE • AUTOMATE
+    </text>
+
+    <!-- tiny center signal -->
+    <g>
+      <circle cx="716" cy="110" r="2" fill="#22D3EE"/>
+      <circle cx="884" cy="110" r="2" fill="#A3E635"/>
+      <path d="M722 110H750" stroke="#22D3EE" stroke-opacity="0.32"/>
+      <path d="M850 110H878" stroke="#A3E635" stroke-opacity="0.32"/>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- RIGHT AI SPHERE -->
+    <!-- ========================================================= -->
+
+    <!-- atmospheric sphere glow -->
+    <circle
+      cx="1360"
+      cy="110"
+      r="132"
+      fill="#7C3AED"
+      opacity="0.12"
+      filter="url(#blur20)"
+    />
+
+    <!-- sphere base -->
+    <circle
+      cx="1360"
+      cy="110"
+      r="122"
+      fill="url(#sphere)"
+      stroke="#8B5CF6"
+      stroke-opacity="0.25"
+    />
+
+    <!-- sphere contour lines -->
+    <g clip-path="url(#sphereClip)" fill="none">
+      <ellipse
+        cx="1360"
+        cy="110"
+        rx="118"
+        ry="37"
+        stroke="#818CF8"
+        stroke-opacity="0.38"
+      />
+
+      <ellipse
+        cx="1360"
+        cy="110"
+        rx="118"
+        ry="68"
+        stroke="#6366F1"
+        stroke-opacity="0.3"
+      />
+
+      <ellipse
+        cx="1360"
+        cy="110"
+        rx="118"
+        ry="96"
+        stroke="#4F46E5"
+        stroke-opacity="0.25"
+      />
+
+      <ellipse
+        cx="1360"
+        cy="110"
+        rx="48"
+        ry="120"
+        stroke="#22D3EE"
+        stroke-opacity="0.25"
+      />
+
+      <ellipse
+        cx="1360"
+        cy="110"
+        rx="82"
+        ry="120"
+        stroke="#818CF8"
+        stroke-opacity="0.26"
+      />
+
+      <path
+        d="M1238 112C1285 72 1315 64 1360 72C1406 80 1440 100 1482 78"
+        stroke="#C084FC"
+        stroke-opacity="0.45"
+      />
+
+      <path
+        d="M1235 139C1284 104 1320 98 1360 107C1404 118 1440 126 1486 100"
+        stroke="#22D3EE"
+        stroke-opacity="0.42"
+      />
+
+      <!-- glowing mesh dots -->
+      <g fill="#A5B4FC">
+        <circle cx="1304" cy="73" r="1.5"/>
+        <circle cx="1337" cy="52" r="1.3"/>
+        <circle cx="1386" cy="70" r="1.4"/>
+        <circle cx="1422" cy="94" r="1.6"/>
+        <circle cx="1292" cy="130" r="1.3"/>
+        <circle cx="1350" cy="151" r="1.6"/>
+        <circle cx="1415" cy="144" r="1.5"/>
+      </g>
+    </g>
+
+    <!-- sphere edge -->
+    <circle
+      cx="1360"
+      cy="110"
+      r="122"
+      fill="none"
+      stroke="url(#cyanPurple)"
+      stroke-opacity="0.5"
+      stroke-width="1.2"
+    />
+
+    <!-- ========================================================= -->
+    <!-- RIGHT CIRCUIT CONNECTIONS -->
+    <!-- ========================================================= -->
+
+    <g
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path
+        d="M1428 67H1510L1530 52H1580"
+        stroke="#818CF8"
+        stroke-opacity="0.65"
+      />
+
+      <path
+        d="M1440 102H1502L1520 116H1580"
+        stroke="#22D3EE"
+        stroke-opacity="0.6"
+      />
+
+      <path
+        d="M1422 137H1492L1510 153H1570"
+        stroke="#A3E635"
+        stroke-opacity="0.58"
+      />
+    </g>
+
+    <!-- circuit endpoints -->
+    <g>
+      <circle cx="1580" cy="52" r="3" fill="#A5B4FC"/>
+      <circle cx="1580" cy="116" r="3" fill="#67E8F9"/>
+      <circle cx="1570" cy="153" r="3" fill="#BEF264"/>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- FLOATING AI / CODE / AUTOMATION SYMBOLS -->
+    <!-- ========================================================= -->
+
+    <!-- brain -->
+    <g transform="translate(1515 75)" opacity="0.8">
+      <path
+        d="M12 7
+           C8 3 2 6 3 11
+           C-1 13 1 19 5 19
+           C4 24 9 27 13 24
+           C16 28 22 25 21 20
+           C26 18 25 12 21 11
+           C22 6 16 3 12 7Z"
+        stroke="#A78BFA"
+        stroke-width="1.4"
+      />
+      <path d="M12 7V24" stroke="#A78BFA" stroke-width="1"/>
+      <path d="M6 12H11M15 12H20M7 18H11M15 18H19"
+        stroke="#A78BFA"
+        stroke-width="1"
+      />
+    </g>
+
+    <!-- code icon -->
+    <g transform="translate(1510 100)" opacity="0.7">
+      <path d="M5 8L0 13L5 18" stroke="#67E8F9" stroke-width="2"/>
+      <path d="M19 8L24 13L19 18" stroke="#67E8F9" stroke-width="2"/>
+      <path d="M15 5L9 21" stroke="#818CF8" stroke-width="2"/>
+    </g>
+
+    <!-- automation gear -->
+    <g transform="translate(1514 136)" opacity="0.72">
+      <circle cx="12" cy="12" r="7" stroke="#BEF264" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="2.5" stroke="#BEF264" stroke-width="1.2"/>
+      <path
+        d="M12 1V4M12 20V23M1 12H4M20 12H23
+           M4.2 4.2L6.3 6.3M17.7 17.7L19.8 19.8
+           M19.8 4.2L17.7 6.3M6.3 17.7L4.2 19.8"
+        stroke="#BEF264"
+        stroke-width="1.3"
+      />
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- PARTICLES -->
+    <!-- ========================================================= -->
+
+    <g fill="#D8FEFF">
+      <circle cx="565" cy="42" r="1.1" opacity="0.55"/>
+      <circle cx="603" cy="174" r="1" opacity="0.45"/>
+      <circle cx="677" cy="59" r="1.2" opacity="0.5"/>
+      <circle cx="923" cy="45" r="1.1" opacity="0.5"/>
+      <circle cx="981" cy="170" r="1" opacity="0.4"/>
+      <circle cx="1050" cy="78" r="1.2" opacity="0.55"/>
+      <circle cx="1160" cy="172" r="1" opacity="0.45"/>
+      <circle cx="1192" cy="41" r="1.1" opacity="0.5"/>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- BOTTOM ACCENT -->
+    <!-- ========================================================= -->
+
+    <rect
+      x="310"
+      y="205"
+      width="980"
+      height="1"
+      fill="url(#neon)"
+      opacity="0.22"
+    />
+
+    <!-- subtle scan -->
+    <rect
+      x="0"
+      y="0"
+      width="1600"
+      height="220"
+      fill="none"
+      stroke="#67E8F9"
+      stroke-opacity="0.07"
+    />
   </g>
-  <g stroke="url(#edge)" stroke-linecap="round">
-    <path d="M-45 495C105 305 148 449 285 302C375 206 407 335 535 165" stroke-width="2" opacity="0.75"/>
-    <path d="M0 540C115 430 190 518 338 351C425 253 460 330 617 139" stroke-width="1.4" opacity="0.62"/>
-    <path d="M969 492C1103 411 1135 358 1270 254C1385 165 1462 275 1642 45" stroke-width="2" opacity="0.82"/>
-    <path d="M1010 540C1135 475 1184 415 1334 287C1447 191 1516 256 1600 178" stroke-width="1.2" opacity="0.58"/>
-  </g>
-  <g fill="#67E8F9">
-    <circle cx="103" cy="412" r="5"/><circle cx="285" cy="302" r="5"/><circle cx="535" cy="165" r="4"/>
-    <circle cx="1085" cy="404" r="4"/><circle cx="1270" cy="254" r="6"/><circle cx="1470" cy="204" r="5"/>
-  </g>
-  <g fill="#A3E635">
-    <circle cx="168" cy="447" r="3"/><circle cx="385" cy="250" r="3"/><circle cx="1195" cy="350" r="3"/><circle cx="1390" cy="155" r="4"/>
-  </g>
-  <g transform="translate(1280 105)" stroke="url(#edge)" fill="#0A1224" fill-opacity="0.35">
-    <path d="M0 62L74 20L146 62L72 104L0 62Z"/><path d="M0 62V142L72 184V104"/><path d="M146 62V142L72 184"/>
-    <path d="M103 174L176 132L248 174L174 216L103 174Z"/><path d="M103 174V254L174 296V216"/><path d="M248 174V254L174 296"/>
-    <path d="M-73 202L0 160L72 202L-2 244L-73 202Z"/><path d="M-73 202V282L-2 324V244"/><path d="M72 202V282L-2 324"/>
-  </g>
-  <g filter="url(#blur)" opacity="0.34">
-    <circle cx="113" cy="412" r="24" fill="#22D3EE"/><circle cx="1270" cy="254" r="28" fill="#22D3EE"/><circle cx="1470" cy="204" r="22" fill="#A3E635"/>
-  </g>
-  <g fill="#D8FEFF" filter="url(#soft)">
-    <circle cx="103" cy="412" r="3"/><circle cx="285" cy="302" r="3"/><circle cx="1270" cy="254" r="3.5"/><circle cx="1470" cy="204" r="3"/>
-  </g>
-  <rect x="16" y="16" width="1568" height="508" rx="16" stroke="#67E8F9" stroke-opacity="0.13"/>
+
+  <!-- =========================================================== -->
+  <!-- OUTER FRAME -->
+  <!-- =========================================================== -->
+
+  <rect
+    x="10"
+    y="10"
+    width="1580"
+    height="200"
+    rx="16"
+    stroke="#67E8F9"
+    stroke-opacity="0.12"
+  />
 </svg>
