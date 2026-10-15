@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Ayush Bajaj — Complex signals. Clear decisions.</title>
+  <desc id="desc">Software systems and applied AI. Code, context and decisions connected in a dependency graph.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="720" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08121F"/><stop offset="1" stop-color="#171330"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="44" y1="0" x2="660" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DE4D5"/><stop offset="0.55" stop-color="#7DD3FC"/><stop offset="1" stop-color="#A99AFF"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#A5B4FC" stroke-opacity="0.05"/>
+    </pattern>
+    <clipPath id="frame"><rect x="1" y="1" width="718" height="558" rx="20"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="720" height="560" fill="url(#background)"/>
+    <rect width="720" height="560" fill="url(#grid)"/>
+    <path d="M44 0H676" stroke="url(#accent)" stroke-width="3"/>
+    <g font-family="Arial, Helvetica, sans-serif">
+      <text x="44" y="58" fill="#9EAEC6" font-size="15" font-weight="700" letter-spacing="2">AYUSH BAJAJ / SOFTWARE DEVELOPER</text>
+      <text x="40" y="153" fill="#F1F5FB" font-size="69" font-weight="700" letter-spacing="-2.6">Complex signals.</text>
+      <text x="40" y="231" fill="url(#accent)" font-size="69" font-weight="700" letter-spacing="-2.6">Clear decisions.</text>
+      <text x="44" y="276" fill="#9EAEC6" font-size="23">I build the software that connects them.</text>
+    </g>
+    <g stroke="#7886B8" stroke-width="1.5" stroke-opacity="0.4">
+      <path d="M104 385L252 338L355 385L470 338L616 385"/>
+      <path d="M104 385L252 432L355 385L470 432L616 385M252 338V432M470 338V432"/>
+    </g>
+    <path d="M104 385H616" stroke="url(#accent)" stroke-width="2"/>
+    <g fill="#111D32" stroke="#596A93" stroke-width="1.5">
+      <circle cx="252" cy="338" r="6"/><circle cx="252" cy="432" r="6"/>
+      <circle cx="470" cy="338" r="6"/><circle cx="470" cy="432" r="6"/>
+    </g>
+    <circle cx="104" cy="385" r="24" fill="#0D232D" stroke="#6DE4D5" stroke-width="1.5"/>
+    <path d="M98 377L90 385L98 393M111 377L119 385L111 393" stroke="#6DE4D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="355" cy="385" r="19" fill="#101F36" stroke="#7DD3FC" stroke-width="1.5"/>
+    <circle cx="355" cy="385" r="5" fill="#7DD3FC"/>
+    <circle cx="616" cy="385" r="24" fill="#211D3A" stroke="#A99AFF" stroke-width="1.5"/>
+    <path d="M605 385L613 393L627 377" stroke="#BEAEFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="1.5" text-anchor="middle">
+      <text x="104" y="451" fill="#6DE4D5">CHANGE</text>
+      <text x="355" y="451" fill="#7DD3FC">CONTEXT</text>
+      <text x="616" y="451" fill="#BEAEFF">DECISION</text>
+    </g>
+    <path d="M44 483H676" stroke="#29334D"/>
+    <text x="44" y="524" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1.4" fill="#C1CDE0">BACKEND SYSTEMS / APPLIED AI / FULL STACK</text>
+  </g>
+  <rect x="1" y="1" width="718" height="558" rx="20" stroke="#29334D"/>
+</svg>

@@ -1,554 +1,78 @@
-<svg
-  width="1600"
-  height="220"
-  viewBox="0 0 1600 220"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <title>Futuristic AI and software engineering GitHub banner</title>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="390" viewBox="0 0 1280 390" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Ayush Bajaj — Complex signals. Clear decisions.</title>
+  <desc id="desc">Software systems and applied AI. An illuminated dependency graph connects a code change to its downstream impact.</desc>
   <defs>
-    <!-- ========================================================= -->
-    <!-- BACKGROUND -->
-    <!-- ========================================================= -->
-
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="220">
-      <stop offset="0" stop-color="#020711"/>
-      <stop offset="0.48" stop-color="#070B16"/>
-      <stop offset="1" stop-color="#0D0920"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1280" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08121F"/>
+      <stop offset="0.58" stop-color="#0B1325"/>
+      <stop offset="1" stop-color="#171330"/>
     </linearGradient>
-
-    <radialGradient id="leftGlow" cx="0" cy="0" r="1"
-      gradientTransform="translate(250 205) rotate(-35) scale(440 190)"
-      gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#00D9FF" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#00D9FF" stop-opacity="0"/>
-    </radialGradient>
-
-    <radialGradient id="rightGlow" cx="0" cy="0" r="1"
-      gradientTransform="translate(1430 78) rotate(145) scale(340 230)"
-      gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.28"/>
-      <stop offset="0.5" stop-color="#2563EB" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
-    </radialGradient>
-
-    <linearGradient id="neon" x1="0" y1="220" x2="1600" y2="0">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="0.48" stop-color="#818CF8"/>
-      <stop offset="0.78" stop-color="#C084FC"/>
-      <stop offset="1" stop-color="#A3E635"/>
+    <linearGradient id="accent" x1="54" y1="0" x2="1180" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DE4D5"/>
+      <stop offset="0.55" stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#A99AFF"/>
     </linearGradient>
-
-    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-
-    <radialGradient id="sphere" cx="35%" cy="35%" r="70%">
-      <stop offset="0" stop-color="#172554"/>
-      <stop offset="0.55" stop-color="#0B1025"/>
-      <stop offset="1" stop-color="#02040C"/>
+    <radialGradient id="halo">
+      <stop stop-color="#6466D5" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#6466D5" stop-opacity="0"/>
     </radialGradient>
-
-    <!-- ========================================================= -->
-    <!-- EFFECTS -->
-    <!-- ========================================================= -->
-
-    <filter id="blur20" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="20"/>
-    </filter>
-
-    <filter id="blur8" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
-
-    <filter id="blur3" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-
-    <filter id="textGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="2"/>
-    </filter>
-
-    <!-- ========================================================= -->
-    <!-- GRID -->
-    <!-- ========================================================= -->
-
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path
-        d="M32 0H0V32"
-        stroke="#67E8F9"
-        stroke-opacity="0.035"
-      />
+      <path d="M32 0H0V32" stroke="#A5B4FC" stroke-opacity="0.045"/>
     </pattern>
-
-    <!-- ========================================================= -->
-    <!-- SPHERE CLIP -->
-    <!-- ========================================================= -->
-
-    <clipPath id="sphereClip">
-      <circle cx="1360" cy="110" r="122"/>
-    </clipPath>
-
-    <clipPath id="frameClip">
-      <rect width="1600" height="220" rx="18"/>
-    </clipPath>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <clipPath id="frame"><rect x="1" y="1" width="1278" height="388" rx="20"/></clipPath>
   </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="390" fill="url(#background)"/>
+    <rect width="1280" height="390" fill="url(#grid)"/>
+    <ellipse cx="1030" cy="180" rx="310" ry="290" fill="url(#halo)"/>
+    <path d="M54 0H1226" stroke="url(#accent)" stroke-width="3"/>
 
-  <!-- =========================================================== -->
-  <!-- BACKGROUND -->
-  <!-- =========================================================== -->
-
-  <g clip-path="url(#frameClip)">
-    <rect width="1600" height="220" fill="url(#bg)"/>
-    <rect width="1600" height="220" fill="url(#grid)"/>
-
-    <rect width="1600" height="220" fill="url(#leftGlow)"/>
-    <rect width="1600" height="220" fill="url(#rightGlow)"/>
-
-    <!-- subtle center darkness -->
-    <ellipse
-      cx="810"
-      cy="110"
-      rx="360"
-      ry="105"
-      fill="#00040C"
-      opacity="0.25"
-    />
-
-    <!-- ========================================================= -->
-    <!-- TOP TECH MARKS -->
-    <!-- ========================================================= -->
-
-    <g opacity="0.25" stroke="#67E8F9" stroke-width="1">
-      <path d="M45 34H155V50H205"/>
-      <path d="M55 44H110"/>
-      <path d="M1390 32H1515V48H1570"/>
-      <path d="M1470 58H1550"/>
+    <g font-family="Arial, Helvetica, sans-serif">
+      <text x="54" y="59" fill="#8D9DB6" font-size="13" font-weight="700" letter-spacing="3">AYUSH BAJAJ / SOFTWARE DEVELOPER</text>
+      <text x="50" y="151" fill="#F1F5FB" font-size="70" font-weight="700" letter-spacing="-2.8">Complex signals.</text>
+      <text x="50" y="229" fill="url(#accent)" font-size="70" font-weight="700" letter-spacing="-2.8">Clear decisions.</text>
+      <text x="54" y="276" fill="#9EAEC6" font-size="20">I build the software that connects them.</text>
     </g>
 
-    <!-- ========================================================= -->
-    <!-- LEFT DIGITAL LANDSCAPE -->
-    <!-- ========================================================= -->
-
-    <!-- distant glow -->
-    <ellipse
-      cx="255"
-      cy="185"
-      rx="250"
-      ry="38"
-      fill="#22D3EE"
-      opacity="0.13"
-      filter="url(#blur20)"
-    />
-
-    <!-- mountain mesh -->
-    <g
-      fill="none"
-      stroke="#2563EB"
-      stroke-opacity="0.32"
-      stroke-width="1"
-    >
-      <path d="M-40 208L70 148L145 178L220 110L300 163L385 105L470 180L550 125"/>
-      <path d="M-20 220L90 160L160 188L230 127L305 178L390 120L470 190L550 140"/>
-
-      <path d="M70 148L90 160"/>
-      <path d="M145 178L160 188"/>
-      <path d="M220 110L230 127"/>
-      <path d="M300 163L305 178"/>
-      <path d="M385 105L390 120"/>
-      <path d="M470 180L470 190"/>
+    <!-- Dependency graph: an input, a service map, then a decision. -->
+    <g stroke="#7886B8" stroke-width="1.5" stroke-opacity="0.35">
+      <path d="M816 173L904 100L1007 130L1112 92L1195 155"/>
+      <path d="M816 173L900 245L1007 216L1112 268L1195 205"/>
+      <path d="M904 100L900 245M1007 130V216M1112 92V268"/>
+      <path d="M904 100L1007 216L1112 92M900 245L1007 130L1112 268"/>
+    </g>
+    <path d="M816 173L1007 173L1148 173" stroke="url(#accent)" stroke-width="8" opacity="0.13" filter="url(#glow)"/>
+    <path d="M816 173H1148" stroke="url(#accent)" stroke-width="2"/>
+    <g fill="#111D32" stroke="#596A93" stroke-width="1.5">
+      <circle cx="904" cy="100" r="7"/><circle cx="900" cy="245" r="7"/>
+      <circle cx="1007" cy="130" r="7"/><circle cx="1007" cy="216" r="7"/>
+      <circle cx="1112" cy="92" r="7"/><circle cx="1112" cy="268" r="7"/>
+      <circle cx="1195" cy="155" r="5"/><circle cx="1195" cy="205" r="5"/>
+    </g>
+    <circle cx="816" cy="173" r="26" fill="#0D232D" stroke="#6DE4D5" stroke-width="1.5"/>
+    <path d="M809 165L801 173L809 181M823 165L831 173L823 181M820 162L812 184" stroke="#6DE4D5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1007" cy="173" r="20" fill="#101F36" stroke="#7DD3FC" stroke-width="1.5"/>
+    <circle cx="1007" cy="173" r="5" fill="#7DD3FC"/>
+    <circle cx="1148" cy="173" r="26" fill="#211D3A" stroke="#A99AFF" stroke-width="1.5"/>
+    <path d="M1137 173L1145 181L1160 165" stroke="#BEAEFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="1.4" text-anchor="middle">
+      <text x="816" y="219" fill="#6DE4D5">CHANGE</text>
+      <text x="1007" y="74" fill="#7DD3FC">CONTEXT</text>
+      <text x="1148" y="219" fill="#BEAEFF">DECISION</text>
     </g>
 
-    <!-- bright mountain ridges -->
-    <g fill="none" stroke="url(#cyanPurple)" stroke-linecap="round">
-      <path
-        d="M-20 207
-           C70 168 110 186 178 145
-           C230 114 273 158 324 131
-           C380 100 408 151 470 120"
-        stroke-width="2"
-        opacity="0.68"
-      />
-
-      <path
-        d="M-15 220
-           C85 182 125 202 195 160
-           C250 127 286 171 340 143
-           C395 114 425 164 490 137"
-        stroke-width="1"
-        opacity="0.42"
-      />
+    <path d="M54 317H1226" stroke="#29334D"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2.3">
+      <text x="54" y="352" fill="#C1CDE0">BACKEND SYSTEMS</text>
+      <text x="267" y="352" fill="#55647E">/</text>
+      <text x="302" y="352" fill="#C1CDE0">APPLIED AI</text>
+      <text x="459" y="352" fill="#55647E">/</text>
+      <text x="494" y="352" fill="#C1CDE0">FULL-STACK PRODUCTS</text>
+      <text x="1226" y="352" fill="#71839F" text-anchor="end">VIT VELLORE · CSE 2027</text>
     </g>
-
-    <!-- flowing data river -->
-    <path
-      d="M-30 220
-         C100 202 170 214 260 180
-         C340 151 410 171 555 105"
-      stroke="#22D3EE"
-      stroke-opacity="0.18"
-      stroke-width="14"
-      filter="url(#blur8)"
-    />
-
-    <path
-      d="M-30 220
-         C100 202 170 214 260 180
-         C340 151 410 171 555 105"
-      stroke="url(#neon)"
-      stroke-width="2.5"
-      stroke-linecap="round"
-      opacity="0.85"
-    />
-
-    <!-- landscape data nodes -->
-    <g>
-      <circle cx="93" cy="191" r="3" fill="#67E8F9"/>
-      <circle cx="221" cy="158" r="3" fill="#818CF8"/>
-      <circle cx="324" cy="131" r="3" fill="#C084FC"/>
-      <circle cx="450" cy="130" r="3" fill="#BEF264"/>
-    </g>
-
-    <!-- ========================================================= -->
-    <!-- LEFT MICRO LABEL -->
-    <!-- ========================================================= -->
-
-    <g font-family="monospace">
-      <text
-        x="54"
-        y="54"
-        fill="#67E8F9"
-        font-size="10"
-        letter-spacing="2"
-        opacity="0.7"
-      >
-        &gt; BUILDING IDEAS
-      </text>
-
-      <text
-        x="68"
-        y="69"
-        fill="#A5B4FC"
-        font-size="9"
-        letter-spacing="1.6"
-        opacity="0.52"
-      >
-        SHAPING SOLUTIONS_
-      </text>
-    </g>
-
-    <!-- ========================================================= -->
-    <!-- CENTER CORE -->
-    <!-- ========================================================= -->
-
-    <!-- soft halo -->
-    <circle
-      cx="800"
-      cy="110"
-      r="57"
-      fill="#6366F1"
-      opacity="0.08"
-      filter="url(#blur20)"
-    />
-
-    <!-- targeting brackets -->
-    <g
-      fill="none"
-      stroke="url(#neon)"
-      stroke-width="1"
-      opacity="0.38"
-    >
-      <path d="M738 87V77H748"/>
-      <path d="M862 77H872V87"/>
-      <path d="M738 133V143H748"/>
-      <path d="M872 133V143H862"/>
-    </g>
-
-    <!-- central code symbol -->
-    <g font-family="monospace" font-weight="700">
-      <text
-        x="800"
-        y="121"
-        text-anchor="middle"
-        font-size="54"
-        fill="#FFFFFF"
-        opacity="0.06"
-        filter="url(#textGlow)"
-      >
-        &lt;/&gt;
-      </text>
-
-      <text
-        x="800"
-        y="121"
-        text-anchor="middle"
-        font-size="54"
-        fill="url(#neon)"
-      >
-        &lt;/&gt;
-      </text>
-    </g>
-
-    <!-- central caption -->
-    <text
-      x="800"
-      y="153"
-      text-anchor="middle"
-      fill="#D8FEFF"
-      font-family="monospace"
-      font-size="10"
-      letter-spacing="5"
-      opacity="0.72"
-    >
-      CODE • INNOVATE • AUTOMATE
-    </text>
-
-    <!-- tiny center signal -->
-    <g>
-      <circle cx="716" cy="110" r="2" fill="#22D3EE"/>
-      <circle cx="884" cy="110" r="2" fill="#A3E635"/>
-      <path d="M722 110H750" stroke="#22D3EE" stroke-opacity="0.32"/>
-      <path d="M850 110H878" stroke="#A3E635" stroke-opacity="0.32"/>
-    </g>
-
-    <!-- ========================================================= -->
-    <!-- RIGHT AI SPHERE -->
-    <!-- ========================================================= -->
-
-    <!-- atmospheric sphere glow -->
-    <circle
-      cx="1360"
-      cy="110"
-      r="132"
-      fill="#7C3AED"
-      opacity="0.12"
-      filter="url(#blur20)"
-    />
-
-    <!-- sphere base -->
-    <circle
-      cx="1360"
-      cy="110"
-      r="122"
-      fill="url(#sphere)"
-      stroke="#8B5CF6"
-      stroke-opacity="0.25"
-    />
-
-    <!-- sphere contour lines -->
-    <g clip-path="url(#sphereClip)" fill="none">
-      <ellipse
-        cx="1360"
-        cy="110"
-        rx="118"
-        ry="37"
-        stroke="#818CF8"
-        stroke-opacity="0.38"
-      />
-
-      <ellipse
-        cx="1360"
-        cy="110"
-        rx="118"
-        ry="68"
-        stroke="#6366F1"
-        stroke-opacity="0.3"
-      />
-
-      <ellipse
-        cx="1360"
-        cy="110"
-        rx="118"
-        ry="96"
-        stroke="#4F46E5"
-        stroke-opacity="0.25"
-      />
-
-      <ellipse
-        cx="1360"
-        cy="110"
-        rx="48"
-        ry="120"
-        stroke="#22D3EE"
-        stroke-opacity="0.25"
-      />
-
-      <ellipse
-        cx="1360"
-        cy="110"
-        rx="82"
-        ry="120"
-        stroke="#818CF8"
-        stroke-opacity="0.26"
-      />
-
-      <path
-        d="M1238 112C1285 72 1315 64 1360 72C1406 80 1440 100 1482 78"
-        stroke="#C084FC"
-        stroke-opacity="0.45"
-      />
-
-      <path
-        d="M1235 139C1284 104 1320 98 1360 107C1404 118 1440 126 1486 100"
-        stroke="#22D3EE"
-        stroke-opacity="0.42"
-      />
-
-      <!-- glowing mesh dots -->
-      <g fill="#A5B4FC">
-        <circle cx="1304" cy="73" r="1.5"/>
-        <circle cx="1337" cy="52" r="1.3"/>
-        <circle cx="1386" cy="70" r="1.4"/>
-        <circle cx="1422" cy="94" r="1.6"/>
-        <circle cx="1292" cy="130" r="1.3"/>
-        <circle cx="1350" cy="151" r="1.6"/>
-        <circle cx="1415" cy="144" r="1.5"/>
-      </g>
-    </g>
-
-    <!-- sphere edge -->
-    <circle
-      cx="1360"
-      cy="110"
-      r="122"
-      fill="none"
-      stroke="url(#cyanPurple)"
-      stroke-opacity="0.5"
-      stroke-width="1.2"
-    />
-
-    <!-- ========================================================= -->
-    <!-- RIGHT CIRCUIT CONNECTIONS -->
-    <!-- ========================================================= -->
-
-    <g
-      fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path
-        d="M1428 67H1510L1530 52H1580"
-        stroke="#818CF8"
-        stroke-opacity="0.65"
-      />
-
-      <path
-        d="M1440 102H1502L1520 116H1580"
-        stroke="#22D3EE"
-        stroke-opacity="0.6"
-      />
-
-      <path
-        d="M1422 137H1492L1510 153H1570"
-        stroke="#A3E635"
-        stroke-opacity="0.58"
-      />
-    </g>
-
-    <!-- circuit endpoints -->
-    <g>
-      <circle cx="1580" cy="52" r="3" fill="#A5B4FC"/>
-      <circle cx="1580" cy="116" r="3" fill="#67E8F9"/>
-      <circle cx="1570" cy="153" r="3" fill="#BEF264"/>
-    </g>
-
-    <!-- ========================================================= -->
-    <!-- FLOATING AI / CODE / AUTOMATION SYMBOLS -->
-    <!-- ========================================================= -->
-
-    <!-- brain -->
-    <g transform="translate(1515 75)" opacity="0.8">
-      <path
-        d="M12 7
-           C8 3 2 6 3 11
-           C-1 13 1 19 5 19
-           C4 24 9 27 13 24
-           C16 28 22 25 21 20
-           C26 18 25 12 21 11
-           C22 6 16 3 12 7Z"
-        stroke="#A78BFA"
-        stroke-width="1.4"
-      />
-      <path d="M12 7V24" stroke="#A78BFA" stroke-width="1"/>
-      <path d="M6 12H11M15 12H20M7 18H11M15 18H19"
-        stroke="#A78BFA"
-        stroke-width="1"
-      />
-    </g>
-
-    <!-- code icon -->
-    <g transform="translate(1510 100)" opacity="0.7">
-      <path d="M5 8L0 13L5 18" stroke="#67E8F9" stroke-width="2"/>
-      <path d="M19 8L24 13L19 18" stroke="#67E8F9" stroke-width="2"/>
-      <path d="M15 5L9 21" stroke="#818CF8" stroke-width="2"/>
-    </g>
-
-    <!-- automation gear -->
-    <g transform="translate(1514 136)" opacity="0.72">
-      <circle cx="12" cy="12" r="7" stroke="#BEF264" stroke-width="1.5"/>
-      <circle cx="12" cy="12" r="2.5" stroke="#BEF264" stroke-width="1.2"/>
-      <path
-        d="M12 1V4M12 20V23M1 12H4M20 12H23
-           M4.2 4.2L6.3 6.3M17.7 17.7L19.8 19.8
-           M19.8 4.2L17.7 6.3M6.3 17.7L4.2 19.8"
-        stroke="#BEF264"
-        stroke-width="1.3"
-      />
-    </g>
-
-    <!-- ========================================================= -->
-    <!-- PARTICLES -->
-    <!-- ========================================================= -->
-
-    <g fill="#D8FEFF">
-      <circle cx="565" cy="42" r="1.1" opacity="0.55"/>
-      <circle cx="603" cy="174" r="1" opacity="0.45"/>
-      <circle cx="677" cy="59" r="1.2" opacity="0.5"/>
-      <circle cx="923" cy="45" r="1.1" opacity="0.5"/>
-      <circle cx="981" cy="170" r="1" opacity="0.4"/>
-      <circle cx="1050" cy="78" r="1.2" opacity="0.55"/>
-      <circle cx="1160" cy="172" r="1" opacity="0.45"/>
-      <circle cx="1192" cy="41" r="1.1" opacity="0.5"/>
-    </g>
-
-    <!-- ========================================================= -->
-    <!-- BOTTOM ACCENT -->
-    <!-- ========================================================= -->
-
-    <rect
-      x="310"
-      y="205"
-      width="980"
-      height="1"
-      fill="url(#neon)"
-      opacity="0.22"
-    />
-
-    <!-- subtle scan -->
-    <rect
-      x="0"
-      y="0"
-      width="1600"
-      height="220"
-      fill="none"
-      stroke="#67E8F9"
-      stroke-opacity="0.07"
-    />
   </g>
-
-  <!-- =========================================================== -->
-  <!-- OUTER FRAME -->
-  <!-- =========================================================== -->
-
-  <rect
-    x="10"
-    y="10"
-    width="1580"
-    height="200"
-    rx="16"
-    stroke="#67E8F9"
-    stroke-opacity="0.12"
-  />
+  <rect x="1" y="1" width="1278" height="388" rx="20" stroke="#29334D"/>
 </svg>
